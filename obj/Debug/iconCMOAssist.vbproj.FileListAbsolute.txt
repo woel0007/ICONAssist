@@ -7,3 +7,12 @@ c:\users\jeremy\documents\visual studio 2013\Projects\iconCMOAssist\obj\Debug\ic
 C:\Users\Jeremy\Documents\Visual Studio 2013\Projects\iconCMOAssist\obj\Debug\iconCMOAssist.vbprojResolveAssemblyReference.cache
 C:\Users\Jeremy\Documents\Visual Studio 2013\Projects\iconCMOAssist\obj\Debug\iconCMOAssist.AuthForm.resources
 C:\Users\Jeremy\Documents\Visual Studio 2013\Projects\iconCMOAssist\obj\Debug\iconCMOAssist.formMembership.resources
+C:\Users\opjxw0\Documents\Source Code\ICONAssist\bin\Debug\iconCMOAssist.exe.config
+C:\Users\opjxw0\Documents\Source Code\ICONAssist\obj\Debug\iconCMOAssist.pdb
+C:\Users\opjxw0\Documents\Source Code\ICONAssist\obj\Debug\iconCMOAssist.vbprojResolveAssemblyReference.cache
+C:\Users\opjxw0\Documents\Source Code\ICONAssist\obj\Debug\iconCMOAssist.AuthForm.resources
+C:\Users\opjxw0\Documents\Source Code\ICONAssist\obj\Debug\iconCMOAssist.formMembership.resources
+C:\Users\opjxw0\Documents\Source Code\ICONAssist\obj\Debug\iconCMOAssist.vbproj.GenerateResource.Cache
+C:\Users\opjxw0\Documents\Source Code\ICONAssist\bin\Debug\iconCMOAssist.exe
+C:\Users\opjxw0\Documents\Source Code\ICONAssist\bin\Debug\iconCMOAssist.pdb
+C:\Users\opjxw0\Documents\Source Code\ICONAssist\obj\Debug\iconCMOAssist.exe

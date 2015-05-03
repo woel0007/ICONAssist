@@ -15,7 +15,7 @@ Public Class formMembership
 
         memberDict = iconCMOAssist.AuthForm.iCMO_Request(jsonString)
 
-        MsgBox(("members")[1]("firstname"))
+        'MsgBox(("members")[1]("firstname"))
 
 
 

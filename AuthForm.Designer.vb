@@ -72,7 +72,6 @@ Partial Class AuthForm
         Me.txtAuthUser.Name = "txtAuthUser"
         Me.txtAuthUser.Size = New System.Drawing.Size(100, 20)
         Me.txtAuthUser.TabIndex = 5
-        Me.txtAuthUser.Text = "StPete"
         '
         'lblAuthUser
         '
@@ -89,7 +88,6 @@ Partial Class AuthForm
         Me.txtAuthPass.Name = "txtAuthPass"
         Me.txtAuthPass.Size = New System.Drawing.Size(100, 20)
         Me.txtAuthPass.TabIndex = 7
-        Me.txtAuthPass.Text = "Reihaet7rei&"
         '
         'lblAuthPass
         '
@@ -114,7 +112,7 @@ Partial Class AuthForm
         Me.Controls.Add(Me.txtConnectStatus)
         Me.Controls.Add(Me.btnServerConnect)
         Me.Name = "AuthForm"
-        Me.Text = "Form1"
+        Me.Text = "Login to ICON"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
