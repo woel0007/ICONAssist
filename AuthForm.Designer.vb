@@ -72,6 +72,7 @@ Partial Class AuthForm
         Me.txtAuthUser.Name = "txtAuthUser"
         Me.txtAuthUser.Size = New System.Drawing.Size(100, 20)
         Me.txtAuthUser.TabIndex = 5
+        Me.txtAuthUser.Text = "jwoelfel"
         '
         'lblAuthUser
         '
@@ -86,8 +87,10 @@ Partial Class AuthForm
         '
         Me.txtAuthPass.Location = New System.Drawing.Point(76, 81)
         Me.txtAuthPass.Name = "txtAuthPass"
+        Me.txtAuthPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtAuthPass.Size = New System.Drawing.Size(100, 20)
         Me.txtAuthPass.TabIndex = 7
+        Me.txtAuthPass.Text = "2cool4me"
         '
         'lblAuthPass
         '

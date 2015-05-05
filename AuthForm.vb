@@ -6,8 +6,6 @@ Imports System.Web.Script.Serialization
 Imports System.Collections.Generic
 Imports System.Windows.Forms
 
-
-
 Public Class AuthForm
 
     Public Shared Function SendRequest(uri As Uri, jsonDataBytes As Byte(), contentType As String, method As String) As String
@@ -53,14 +51,12 @@ Public Class AuthForm
 
     Public Function iCMO_Authenticate() As String
 
-        Dim frmMember As New formMembership
+        Dim frmMember As New ControlPanel
 
         txtConnectStatus.Text = "Connecting..."
 
-
-
         'Retreive Member List
-        Dim jsonString = "{ ""Auth"": {""Phone"": """ + txtAuthPhone.Text + """,""Username"": """ + txtAuthUser.Text + """,""Password"": """ + txtAuthPass.Text + """ }, ""Request"": { ""Module"": ""membership"", ""Section"": ""members"", ""Filters"": {""startAt"": 0,""limit"": 10 },""Sort"": {""last_name"": ""ascending"",""first_name"": ""ascending""}}} "
+        Dim jsonString As String = "{ ""Auth"": {""Phone"": """ + txtAuthPhone.Text + """,""Username"": """ + txtAuthUser.Text + """,""Password"": """ + txtAuthPass.Text + """ }, ""Request"": { ""Module"": ""membership"", ""Section"": ""members"", ""Filters"": {""startAt"": 0,""limit"": 10 },""Sort"": {""last_name"": ""ascending"",""first_name"": ""ascending""}}} "
 
         'Retreive Account List
         'Dim jsonString = "{""Auth"": {""Phone"": """ + myAuth.Phone + """,""Username"": """ + myAuth.Username + """,""Password"": """ + myAuth.Password + """},""Request"": {""Module"": ""GL"",""Section"": ""Accounts""}}"
@@ -76,7 +72,6 @@ Public Class AuthForm
             txtConnectStatus.BackColor = Drawing.Color.Green
             frmMember.Show()
         End If
-
 
         Return jsonDict("session")
 

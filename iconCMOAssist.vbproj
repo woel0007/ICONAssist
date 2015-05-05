@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="My Project\DataSources\AuthForm.iCMO_Auth.datasource" />
   </ItemGroup>
   <ItemGroup />
@@ -66,12 +67,24 @@
     <Compile Include="AuthForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Membership.Designer.vb">
-      <DependentUpon>Membership.vb</DependentUpon>
+    <Compile Include="ContributionBatch.vb" />
+    <Compile Include="ContributionBatchReport.Designer.vb">
+      <DependentUpon>ContributionBatchReport.vb</DependentUpon>
     </Compile>
-    <Compile Include="Membership.vb">
+    <Compile Include="ContributionBatchReport.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ContributionFund.vb" />
+    <Compile Include="Envelope.vb" />
+    <Compile Include="Household.vb" />
+    <Compile Include="Members.vb" />
+    <Compile Include="ControlPanel.Designer.vb">
+      <DependentUpon>ControlPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="postedTransaction.vb" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -83,8 +96,11 @@
     <EmbeddedResource Include="AuthForm.resx">
       <DependentUpon>AuthForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Membership.resx">
-      <DependentUpon>Membership.vb</DependentUpon>
+    <EmbeddedResource Include="ContributionBatchReport.resx">
+      <DependentUpon>ContributionBatchReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlPanel.resx">
+      <DependentUpon>ControlPanel.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
