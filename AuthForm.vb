@@ -1,6 +1,7 @@
 ﻿Imports System.Net
 Imports System.IO
 Imports System.Text
+Imports System.Xml
 Imports System.Runtime.Serialization
 Imports System.Web.Script.Serialization
 Imports System.Collections.Generic
@@ -83,6 +84,22 @@ Public Class AuthForm
         Public Shared authSession As String
 
     End Class
+
+    Private Sub AuthForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        'Read credentials from file if file exists.
+        'Try
+        Dim reader As XmlTextReader = New XmlTextReader("logon.xml")
+        Do While (reader.Read())
+            If reader.Name = "phone" Then txtAuthPhone.Text = reader.ReadInnerXml
+            If reader.Name = "username" Then txtAuthUser.Text = reader.ReadInnerXml
+            If reader.Name = "password" Then txtAuthPass.Text = reader.ReadInnerXml
+        Loop
+        'Catch ex As Exception
+
+        'nd Try
+
+    End Sub
 
 End Class
 
