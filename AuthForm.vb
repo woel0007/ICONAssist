@@ -34,7 +34,7 @@ Public Class AuthForm
     Public Shared Function iCMO_Request(jsonStr As String) As Object
 
         Dim jsonEncoded = Encoding.UTF8.GetBytes(jsonStr)
-        Dim result_post = SendRequest(Globals.iconCMOUri, jsonEncoded, "application/json", "POST")
+        Dim result_post As String = SendRequest(Globals.iconCMOUri, jsonEncoded, "application/json", "POST")
 
         Dim jss As New JavaScriptSerializer()
         Dim jsonDict As Dictionary(Of String, Object) = jss.Deserialize(Of Dictionary(Of String, Object))(result_post)
