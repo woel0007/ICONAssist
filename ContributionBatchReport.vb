@@ -60,9 +60,6 @@ Public Class ContributionBatchReport
 
     Public Function getRawContributionData(startAt As Integer) As Dictionary(Of String, Object)
 
-
-        'Dim batchDict As Dictionary(Of String, Object)
-
         Dim jsonString = "{""Auth"": { ""Session"" : """ + iconCMOAssist.AuthForm.Globals.authSession + """},""Request"": { ""Module"": ""contributions"", ""Section"": ""posted"", ""Filters"": {""begin_date"": ""January 1, 2015"", ""end_date"": ""December 31, 2015"", ""startAt"": " + startAt.ToString + ", ""limit"": ""1000"" }}}"
         Dim batchDict As Dictionary(Of String, Object) = iconCMOAssist.AuthForm.iCMO_Request(jsonString)
 
