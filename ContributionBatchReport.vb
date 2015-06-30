@@ -67,6 +67,4 @@ Public Class ContributionBatchReport
 
     End Function
 
-
-
 End Class
