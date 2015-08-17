@@ -23,7 +23,7 @@ Public Class AuthForm
         Dim response = req.GetResponse().GetResponseStream()
 
         Dim reader As New StreamReader(response)
-        Dim res = reader.ReadToEnd()
+        Dim res As String = reader.ReadToEnd()
         reader.Close()
         response.Close()
 
@@ -63,7 +63,7 @@ Public Class AuthForm
         'Dim jsonString = "{""Auth"": {""Phone"": """ + myAuth.Phone + """,""Username"": """ + myAuth.Username + """,""Password"": """ + myAuth.Password + """},""Request"": {""Module"": ""GL"",""Section"": ""Accounts""}}"
 
         Dim jsonEncoded = Encoding.UTF8.GetBytes(jsonString)
-        Dim result_post = SendRequest(Globals.iconCMOUri, jsonEncoded, "application/json", "POST")
+        Dim result_post As String = SendRequest(Globals.iconCMOUri, jsonEncoded, "application/json", "POST")
 
         Dim jss As New JavaScriptSerializer()
         Dim jsonDict As Dictionary(Of String, Object) = jss.Deserialize(Of Dictionary(Of String, Object))(result_post)
@@ -82,6 +82,8 @@ Public Class AuthForm
 
         Public Shared iconCMOUri As New Uri("https://secure3.iconcmo.com/api/")
         Public Shared authSession As String
+        Public Shared contributionReportPath As String = "C:\temp\churchbatches.txt"
+        Public Shared monthlyContributionReportPath As String = "C:\temp\monthContributionReport.txt"
 
     End Class
 
