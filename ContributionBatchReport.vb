@@ -44,13 +44,33 @@ Public Class ContributionBatchReport
             startRecordNumber = startRecordNumber + recordsReturned
         End While
 
+        'Find way to sort dictionary by keys
+        'INSERT CODE HERE
+
+        Dim monthlyReport As New Dictionary(Of String, Double)
 
         For Each batchDate As String In contributionDict.Keys
-            File.AppendAllText("C:\temp\churchbatches.txt", String.Format("Posted Date: {0}   Total Amount Given: ${1} " + vbNewLine, batchDate, contributionDict(batchDate).getAmountGiven().ToString))
+
+            'Assemble Data for Contributions by Month Report
+            Dim monthNum As String = batchDate.Substring(1, 2)
+
+            If monthlyReport.ContainsKey(monthNum) Then
+                monthlyReport(monthNum) = monthlyReport(monthNum) + contributionDict(batchDate).getAmountGiven()
+            Else
+                monthlyReport.Add(monthNum, contributionDict(batchDate).getAmountGiven())
+            End If
+
+
+            File.AppendAllText(AuthForm.Globals.contributionReportPath, String.Format("Posted Date: {0}   Total Amount Given: ${1} " + vbNewLine, batchDate, contributionDict(batchDate).getAmountGiven().ToString))
             For Each fund In contributionDict(batchDate).fundList
-                File.AppendAllText("C:\temp\churchbatches.txt", String.Format("     Fund Name: {0}    ${1}" + vbNewLine, fund.getName, fund.getAmountGiven().ToString))
+                File.AppendAllText(AuthForm.Globals.contributionReportPath, String.Format("     Fund Name: {0}    ${1}" + vbNewLine, fund.getName, fund.getAmountGiven().ToString))
             Next
-            File.AppendAllText("C:\temp\churchbatches.txt", vbNewLine)
+            File.AppendAllText(AuthForm.Globals.contributionReportPath, vbNewLine)
+        Next
+
+        'Print Monthly Contribution Report
+        For Each monthNum As String In monthlyReport.Keys
+            File.AppendAllText(AuthForm.Globals.monthlyContributionReportPath, String.Format("Month: {0}  Total Amount Given: $[1}" + vbNewLine, monthNum, monthlyReport(monthNum)))
         Next
 
         Return contributionDict
