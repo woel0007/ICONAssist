@@ -23,39 +23,39 @@ Partial Class ControlPanel
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnGetMembers = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnContributionReport = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnGetMembers
         '
         Me.btnGetMembers.Location = New System.Drawing.Point(13, 13)
         Me.btnGetMembers.Name = "btnGetMembers"
-        Me.btnGetMembers.Size = New System.Drawing.Size(92, 23)
+        Me.btnGetMembers.Size = New System.Drawing.Size(170, 23)
         Me.btnGetMembers.TabIndex = 0
         Me.btnGetMembers.Text = "Get Members" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.btnGetMembers.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnContributionReport
         '
-        Me.Button1.Location = New System.Drawing.Point(13, 42)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(92, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Get Contribution Posting Details"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnContributionReport.Location = New System.Drawing.Point(13, 42)
+        Me.btnContributionReport.Name = "btnContributionReport"
+        Me.btnContributionReport.Size = New System.Drawing.Size(170, 23)
+        Me.btnContributionReport.TabIndex = 1
+        Me.btnContributionReport.Text = "Generate Contribution Report"
+        Me.btnContributionReport.UseVisualStyleBackColor = True
         '
-        'formMembership
+        'ControlPanel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(289, 263)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnContributionReport)
         Me.Controls.Add(Me.btnGetMembers)
-        Me.Name = "formMembership"
+        Me.Name = "ControlPanel"
         Me.Text = "Control Panel"
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents btnGetMembers As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnContributionReport As System.Windows.Forms.Button
 End Class

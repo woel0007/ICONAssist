@@ -68,7 +68,7 @@
     <Compile Include="AuthForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ContributionBatch.vb" />
+    <Compile Include="Data Classes\ContributionBatch.vb" />
     <Compile Include="ContributionBatchReport.Designer.vb">
       <DependentUpon>ContributionBatchReport.vb</DependentUpon>
     </Compile>
@@ -76,16 +76,16 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ContributionFund.vb" />
-    <Compile Include="Envelope.vb" />
-    <Compile Include="Household.vb" />
-    <Compile Include="Members.vb" />
+    <Compile Include="Data Classes\Envelope.vb" />
+    <Compile Include="Data Classes\Household.vb" />
+    <Compile Include="Data Classes\Members.vb" />
     <Compile Include="ControlPanel.Designer.vb">
       <DependentUpon>ControlPanel.vb</DependentUpon>
     </Compile>
     <Compile Include="ControlPanel.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="postedTransaction.vb" />
+    <Compile Include="Data Classes\postedTransaction.vb" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />

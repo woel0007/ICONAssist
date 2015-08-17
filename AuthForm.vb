@@ -16,7 +16,7 @@ Public Class AuthForm
         req.Method = method
         req.ContentLength = jsonDataBytes.Length
 
-        Dim stream = req.GetRequestStream()
+        Dim stream = req.GetRequestStream()  'This is the part that requires internet connection.
         stream.Write(jsonDataBytes, 0, jsonDataBytes.Length)
         stream.Close()
 
@@ -87,18 +87,12 @@ Public Class AuthForm
 
     Private Sub AuthForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        'Read credentials from file if file exists.
-        'Try
         Dim reader As XmlTextReader = New XmlTextReader("logon.xml")
         Do While (reader.Read())
             If reader.Name = "phone" Then txtAuthPhone.Text = reader.ReadInnerXml
             If reader.Name = "username" Then txtAuthUser.Text = reader.ReadInnerXml
             If reader.Name = "password" Then txtAuthPass.Text = reader.ReadInnerXml
         Loop
-        'Catch ex As Exception
-
-        'nd Try
-
     End Sub
 
 End Class
