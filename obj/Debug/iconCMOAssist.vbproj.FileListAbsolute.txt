@@ -17,3 +17,13 @@ C:\Users\opjxw0\Documents\Source Code\ICONAssist\bin\Debug\iconCMOAssist.pdb
 C:\Users\opjxw0\Documents\Source Code\ICONAssist\obj\Debug\iconCMOAssist.exe
 C:\Users\opjxw0\Documents\Source Code\ICONAssist\obj\Debug\iconCMOAssist.ContributionBatchReport.resources
 C:\Users\opjxw0\Documents\Source Code\ICONAssist\obj\Debug\iconCMOAssist.ControlPanel.resources
+C:\Users\opjxw0\Documents\SourceCode\ICONAssist\bin\Debug\iconCMOAssist.exe.config
+C:\Users\opjxw0\Documents\SourceCode\ICONAssist\bin\Debug\iconCMOAssist.exe
+C:\Users\opjxw0\Documents\SourceCode\ICONAssist\bin\Debug\iconCMOAssist.pdb
+C:\Users\opjxw0\Documents\SourceCode\ICONAssist\obj\Debug\iconCMOAssist.vbprojResolveAssemblyReference.cache
+C:\Users\opjxw0\Documents\SourceCode\ICONAssist\obj\Debug\iconCMOAssist.AuthForm.resources
+C:\Users\opjxw0\Documents\SourceCode\ICONAssist\obj\Debug\iconCMOAssist.ContributionBatchReport.resources
+C:\Users\opjxw0\Documents\SourceCode\ICONAssist\obj\Debug\iconCMOAssist.ControlPanel.resources
+C:\Users\opjxw0\Documents\SourceCode\ICONAssist\obj\Debug\iconCMOAssist.vbproj.GenerateResource.Cache
+C:\Users\opjxw0\Documents\SourceCode\ICONAssist\obj\Debug\iconCMOAssist.exe
+C:\Users\opjxw0\Documents\SourceCode\ICONAssist\obj\Debug\iconCMOAssist.pdb
